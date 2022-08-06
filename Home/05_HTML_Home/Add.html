@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Формы</title>
+  </head>
+  <body>
+    <h1 align="center">Заполните анкету</h1>
+    <fieldset>
+      <legend>Личные данные</legend>
+      <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <div> 
+        <input type="text" name="Surname" pattern="\p{Z}; ^[А-Яа-яЁё]+$" placeholder="Фамилия" size="25" required autofocus/>
+        <!--"\p{Z}" - без пробелов; ^[А-Яа-яЁё]+$ - только русские буквы; 
+        size - ширина текстового поля; ВОПРОС_можно ли так прописывать два и более условия для pattern-->
+        <span>text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле</span>
+        </div>
+        <div>
+            <input type="text" name="Name" pattern="\p{Z}; ^[А-Яа-яЁё]+$" placeholder="Имя" size="20" required/>
+            <span>text: Только кириллица, без пробелов, длина поля 20, обязательное поле</span>
+        </div> 
+        <div>
+            <input type="text" name="Patronymic_name" pattern="\p{Z}; ^[А-Яа-яЁё]+$" placeholder="Отчество" size="24" required/>
+            <span>text: Только кириллица, без пробелов, длина поля 24, обязательное поле</span>
+        </div>
+        <fieldset>
+            <legend>Паспортные данные</legend>
+            <div>
+                <span> text: Серия - только заглавные две латинские буквы с длиной 2 и максимальным количеством символов 2, количество букв не менее 2,<br>
+                обязательное поле<br>
+                text: Номер паспорта - только цифры с длиной 7 и максимальным количеством символов 7, количество цифр не менее 7, обязательное поле
+                </span></div>
+            <div> 
+                <input type="text" name="Series" pattern="[A-Z]{2,}" size="2" maxlength="2" required/>
+                <input type="text" name="Number_passport" pattern="^[0-9]+${7,}" size="7" maxlength="7" required/>
+            </div>
+        </fieldset>
+        <fieldset> 
+                <legend>Дата рождения</legend>
+                <div>
+                <input type="text" name="Year_born" pattern="^[0-9]+${4,}" size="7" maxlength="4" required/>
+                <span>text: Год рождения 4-е цифры</span>  
+                </div>
+                <div>
+                    <select name="months_year" id="months">
+                        <option value="01">Январь</option>
+                        <option value="02">Февраль</option>
+                        <option value="03">Март</option>
+                        <option value="04">Апрель</option>
+                        <option value="05">Май</option>
+                        <option value="06">Июнь</option>
+                        <option value="07">Июль</option>
+                        <option value="08">Август</option>
+                        <option value="09">Сентябрь</option>
+                        <option value="10">Октябрь</option>
+                        <option value="11">Ноябрь</option>
+                        <option value="12">Декабрь</option>
+                    </select>
+                    <span>select: Месяц рождения</span>
+                </div>
+                <div>
+                <input type="number" name="Number" size="7" min="1" max="31" step="1" required/> 
+                <span>number: Диапазон от 1 до 31 с шагом 1</span>
+                </div>
+            </fieldset>
+            <div>
+                <select name="citizen_people" id="citizen" required>
+                    <option value="Belarus">РБ</option>
+                    <option value="Other">Другое</option>
+                </select>
+            <div>
+                Адрес:
+            </div>
+            <textarea name="textarea" rows="3" cols="17"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Интересы</legend>
+          <fieldset>
+            <legend>array: Хобби</legend> 
+            <div>
+                <input type="radio" name="case" id="case1" value="case1" />
+                <label for="case1">Рыбалка</label>
+              </div>
+              <div>
+                <input type="radio" name="case" id="case2" value="case2" />
+                <label for="case2">Астрономия</label>
+              </div>
+              <div>
+                <input type="radio" name="case" id="case3" value="case3" />
+                <label for="case3">Дайвинг</label>
+              </div>
+              <div>
+                <input type="radio" name="case" id="case4" value="case4" />
+                <label for="case4">Марки</label>
+                <div>
+         </fieldset>
+         <fieldset>
+            <legend>Домашние животные (возможность выбора нескольких вариантов):</legend>
+            <div>array: select multiple</div>
+            <select multiple size="12" name="Pets_list" id="Pets">
+              <optgroup label="Попугаи">
+                    <option value="1">Волнистый</option>
+                    <option value="2">Ара</option>
+                    <option value="3">Неразлучник</option>
+              </optgroup>
+              <optgroup label="Рыба"> 
+                    <option value="4">Караси</option>
+                    <option value="5">Окуни</option>
+                    <option value="6">Осётр</option>
+              </optgroup>
+              <optgroup label="Птицы"> 
+                    <option value="7">Стая ворон</option>
+                    <option value="8">Аист</option>
+                    <option value="9">Археоптерикс</option>
+          </optgroup>
+        </select> 
+    </fieldset>
+</fieldset>
+<fieldset>
+    <legend>Данные для входа и восстановления пароля</legend>
+    <div> 
+    <input type="text" name="Login" pattern="^[a-zA-Z]+${5,}" placeholder="Логин" size="20" required/>
+    <span>text: Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле</span>
+    </div>
+    <div>
+    <input type="text" name="Password" pattern="^[a-zA-Z]+${10,}" placeholder="Пароль" size="20" autocomplete="off" required/> 
+    <span>password: Только латиница, без пробелов, не менее 10 символов длина поля 20, обязательное поле отключить<br>
+    автозаполнение</span> 
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Координаты:</legend>
+    <div>
+    <input type="email" name="Email" placeholder="введите адрес почты">
+    <span>email: проверка должна осуществляться при помощи новых атрибутов тега input</span>
+    </div> 
+    <div>
+    <input type="url" name="Url" placeholder="введите адрес сайта">  
+    <span>url: проверка должна осуществляться при помощи новых атрибутов тега input</span>
+    </div> 
+</fieldset>
+<fieldset>
+    <legend>Цифры</legend>
+    <div> 
+    <input type="number" name="Num" size="7" min="-2.5" max="2.5" step="0.1" required/> 
+    <span>number: Диапазон от -2.5 до 2.5 с шагом 0.1</span>
+    </div>
+    <div>
+        <input type="range" id="volume" name="volume_01" min="1" max="10">
+        <span>range: Максимальное 10 минимальное 1</span>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Кнопки управления</legend>
+    <div>  
+    <button>Отправить</button>
+    <button>Сбросить</button>
+    </div>
+    <button type="button" name="submit"> <!-- при type "button" кнопка пустышка-->
+    <img src="Message_01.jpg">
+    </button>
+    <span>-при нажатии на эту кнопку ничего не происходит</span>
+</fieldset>
+</body>
+</html>
