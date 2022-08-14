@@ -1,0 +1,21 @@
+.rn_upper {
+  list-style-type: upper-roman;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rn_lower {
+  list-style-type: lower-roman;
+  font-size: 16px;
+  font-weight: normal;
+}
+.list {
+  width: 350px;
+}
+.code {
+  background: black;
+  color: green; /* меняет цвет ШРИФТА без привязки к слову FONT*/
+  width: 400px;
+  font-size: 16px;
+  max-height: 72px; /*размер высоты в 4 строки*/
+  overflow: auto;
+}
