@@ -1,0 +1,36 @@
+.parent {
+  background-color: rgba(219, 219, 219, 1);
+}
+/*.parent::after {
+  content: "";
+  display: block;
+  clear: both;      через псевдоэлемент ::after растянуть не получилось
+}*/
+
+.left_block {
+  float: left;
+  width: 15em;
+  background-color: #cccccc;
+  margin-bottom: 0.2em;
+}
+.heading {
+  margin: 0px;
+}
+.article {
+  width: 100%;
+  background-color: #aaa;
+  margin-top: 0.2em;
+}
+img {
+  float: right;
+  clear: both;
+}
+.clear {
+  clear: both;
+}
+.footer {
+  background-color: #ccc;
+  width: 100%;
+  clear: both;
+  line-height: auto;
+}
