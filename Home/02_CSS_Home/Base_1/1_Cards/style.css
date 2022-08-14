@@ -1,0 +1,40 @@
+.ten_nine {
+  display: inline-block;
+  background-image: url(sprite.png);
+  background-repeat: no-repeat;
+  background-position: -430px -1388px;
+  height: 205px;
+  width: 150px;
+}
+.queen {
+  display: inline-block;
+  background-image: url(sprite.png);
+  background-repeat: no-repeat;
+  background-position: 5px -1785px;
+  height: 205px;
+  width: 150px;
+}
+.nine {
+  display: inline-block;
+  background-image: url(sprite.png);
+  background-repeat: no-repeat;
+  background-position: -283px -1388px;
+  height: 205px;
+  width: 150px;
+}
+.ace {
+  display: inline-block;
+  background-image: url(sprite.png);
+  background-repeat: no-repeat;
+  background-position: -139px -2185px;
+  height: 205px;
+  width: 150px;
+}
+.joker {
+  display: inline-block;
+  background-image: url(sprite.png);
+  background-repeat: no-repeat;
+  background-position: -284px -2385px;
+  height: 205px;
+  width: 150px;
+}
