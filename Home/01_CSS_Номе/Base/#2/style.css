@@ -1,0 +1,28 @@
+h4 {
+  color: black;
+  text-align: right;
+}
+.info {
+  text-align: right;
+}
+p span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal; /*ширина шрифта*/
+  color: black;
+  text-align: right;
+}
+h3 {
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  text-decoration: underline; /*underline - подчеркивает слова*/
+  color: black;
+  text-align: left;
+}
+div {
+  font-family: "Bad Script", cursive;
+  font-weight: normal;
+  color: black;
+  text-align: justify;
+}
