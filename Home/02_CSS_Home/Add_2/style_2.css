@@ -1,0 +1,38 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: stretch;
+  align-self: flex-start;
+  background-color: rgba(219, 219, 219, 1);
+}
+
+.left_block {
+  width: 15em;
+  background-color: #cccccc;
+  margin-bottom: 0.2em;
+}
+.heading {
+  margin: 0px;
+}
+.article_1 {
+  background-color: #aaa;
+  margin-top: 0.2em;
+  align-self: flex-start;
+  padding: 0px;
+  width: 100%;
+}
+.article_2 {
+  background-color: #aaa;
+  margin-top: 0.2em;
+  align-self: flex-start;
+  padding: 0px;
+  width: 100%;
+}
+.footer {
+  background-color: #ccc;
+  line-height: auto;
+  width: 100%;
+}
