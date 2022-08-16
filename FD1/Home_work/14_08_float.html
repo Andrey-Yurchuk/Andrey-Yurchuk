@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLOAT</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box; /*padding ужимает контент = не растит блок*/
+      }
+      body {
+        height: 10000px;
+      }
+      .header,
+      .footer {
+        height: 50px;
+        background-color: blue;
+      }
+      .content-wrap {
+        background-color: yellow;
+      }
+      .menu {
+        background-color: red;
+        width: 200px;
+        height: 100px;
+        float: left;
+      }
+      .banner {
+        background-color: green;
+        width: 200px;
+        height: 100px;
+        float: right;
+      }
+
+      @media all and (max-width: 1187px) {
+        .header {
+          background-color: chartreuse;
+        }
+        .content-wrap {
+          background-color: rgb(255, 0, 221);
+        }
+        .menu {
+          background-color: brown;
+        }
+        .banner {
+          background-color: gold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">header</div>
+    <div class="content-wrap">
+      <div class="menu">menu</div>
+      <!--зафлоченные элементы menu и banner должны быть выше элемента content-->
+      <div class="banner">banner</div>
+      <div class="content">content</div>
+      <div style="clear: both"></div>
+      <!-- "СТВОРКА" растягивает content-->
+    </div>
+    <div class="footer">footer</div>
+  </body>
+</html>
