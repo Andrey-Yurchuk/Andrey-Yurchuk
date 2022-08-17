@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaptive navigation</title>
+    <style>
+      .parent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      .Monday,
+      .Tuesday,
+      .Wednesday,
+      .Thursday,
+      .Friday,
+      .Saturday {
+        flex-basis: 10%;
+        border-radius: 8.5%;
+        flex-grow: 0;
+        height: 21px;
+        color: #818181;
+      }
+      .Wednesday:hover {
+        background-color: #818181; /*МЕНЯЕМ COLOR фона FLEX элемента при наведении курсора*/
+        color: ghostwhite;
+      }
+      .parent > div {
+        background-color: #d3d3d3;
+        border: solid black 1px;
+        position: relative;
+        cursor: pointer; /*вид наведенного курсора*/
+      }
+      .Wednesday_2 {
+        width: 135px;
+        display: none;
+      }
+      .Wednesday_2 > div {
+        background-color: #d3d3d3;
+        border: solid black 1px;
+        cursor: pointer;
+        border-radius: 8.5%;
+      }
+      .parent > div:hover .Wednesday_2 {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        color: #818181;
+      }
+
+      @media all and (max-width: 820px) {
+        .parent {
+          flex-direction: column;
+          width: 135px;
+        }
+        .parent > div:hover .Wednesday_2 {
+          left: 80%;
+          top: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="Monday">Понедельник</div>
+      <div class="Tuesday">Вторник</div>
+      <div class="Wednesday">
+        Среда
+        <div class="Wednesday_2">
+          <div>Завтрак</div>
+          <div>Обед</div>
+          <div>Ужин</div>
+        </div>
+      </div>
+      <div class="Thursday">Четверг</div>
+      <div class="Friday">Пятница</div>
+      <div class="Saturday">Суббота</div>
+    </div>
+  </body>
+</html>
