@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форматы файлов</title>
+    <style>
+      p {
+        border: 1px solid #d5d5d5;
+        border-radius: 0px 10px;
+        width: 650px;
+        padding-bottom: 10px;
+        text-indent: 15px;
+        margin: 0px;
+      }
+      ul {
+        list-style-type: none; /*отключились маркеры li*/
+      }
+      .ms_word:hover {
+        background: url(word.jpg) right no-repeat;
+        width: 170px;
+      }
+      .pdf:hover {
+        background: url(pdf.png) right no-repeat;
+        width: 137px;
+      }
+      .zip:hover {
+        background: url(zip.gif) right no-repeat;
+        width: 78px;
+      }
+      a[href^="http://142"]::before
+      {
+        content: url("cursor.png"); /* ^ селектор "начиная с"*/
+      }
+      a[href*="habr"]::before {
+        content: url("paper.jpg"); /* * селектор "содержит"*/
+      }
+      a[href$=".by"]::after {
+        content: url("word.jpg"); /* $ селектор "заканчивается"*/
+      }
+      a[href*="html"]::after {
+        content: url("pdf.png");
+      }
+      a[href$=".org"]::after {
+        content: url("zip.gif");
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Форматы файлов</h1>
+    <p>
+      .DOC или .doc (от англ.<a href="http://142.93.172.35:8080/css/4"
+        >document)</a
+      >
+      - расширение имени файла, используемое для файлов,<br />
+      представляющих текст, с разметкой или без. Расширение .DOC часто
+      использовалось для<br />
+      обозначения простых текстовых файлов без оформления, однако позже стало<br />
+      использоваться для двоичных форматов с разметкой.<br />
+      <a href="https://www.it-academy.by">Документ MS Word</a>
+    </p>
+    <p>
+      Portable Document Format (<a href="http://142.93.172.35:8080/css/4"
+        >PDF</a
+      >
+      - межплатформенный формат электронных документов,<br />
+      разработанный фирмой Adobe Systems с использованием ряда возможностей
+      языка<br />
+      Postscript.<br />
+      <a href="http://htmlbook.ru">Документ PDF</a>
+    </p>
+    <p>
+      ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом
+      формате<br />
+      обычно имеет расширение
+      <a href="http://142.93.172.35:8080/css/4">zip</a> и хранит в сжатом или
+      несжатом виде один или несколько<br />
+      файлов, которое можно из него извлечь путем распаковки с помощью
+      специальной<br />
+      программы.<br />
+      <a href="https://developer.mozilla.org">Архив</a>
+    </p>
+    <h2>Это список файлов</h2>
+    <ul>
+      <li class="ms_word">
+        <a href="https://habr.com">Документ MS Word</a>
+      </li>
+      <li class="pdf"><a href="https://habr.com">Документ PDF</a></li>
+      <li class="zip"><a href="https://habr.com">Архив</a></li>
+    </ul>
+  </body>
+</html>
