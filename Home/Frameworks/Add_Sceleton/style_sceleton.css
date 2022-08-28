@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  width: auto;
+  max-width: 960px;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+.box04 h3 {
+  color: hsla(197, 70%, 55%, 1);
+}
+.box06 h2 {
+  color: hsla(197, 70%, 55%, 1);
+}
+.box08 h2 {
+  color: hsla(197, 70%, 55%, 1);
+  font-size: 30pt;
+  font-weight: bold;
+  line-height: 0.9;
+}
+
+.box01,
+.box02,
+.box03,
+.box04,
+.box05,
+.box06,
+.box07,
+.box08,
+.box09 {
+  padding: 10px;
+  border: 10px;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    width: 80%;
+  }
+  .column,
+  .columns {
+    margin-left: 10%;
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 10%;
+  }
+}

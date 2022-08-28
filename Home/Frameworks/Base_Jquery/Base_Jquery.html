@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table with JQUERY</title>
+    <style>
+      body {
+        font-size: 18px;
+        width: 650px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      th {
+        border: 2px;
+        border-style: dotted;
+        border-color: #bbbbbb;
+      }
+      td {
+        border: 2px;
+        border-style: dotted;
+        border-color: #bbbbbb;
+      }
+      table tr:first-child {
+        background-color: #808080;
+      }
+      table tr:nth-child(3) {
+        background-color: #d3d3d3;
+      }
+      table tr:nth-child(5) {
+        background-color: #d3d3d3;
+      }
+      #button {
+        background: #008eb0;
+        color: #fff;
+        border-color: lightblue;
+        border-style: solid;
+        border-radius: 8%;
+        padding: 0.7rem 0.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr class="string_1">
+        <th>ФИО</th>
+        <th>пол</th>
+        <th>должность</th>
+        <th>дата рож.</th>
+        <th>Данные 01</th>
+        <th>Данные 02</th>
+      </tr>
+      <tr class="string_2">
+        <th>Иванов Иван Иванович</th>
+        <td>М</td>
+        <td>начальник</td>
+        <td>01.01.1960</td>
+        <td>4567</td>
+        <td>3453</td>
+      </tr>
+      <tr class="string_3">
+        <th>Петрова Илонна Петровна</th>
+        <td>Ж</td>
+        <td>секретарь</td>
+        <td>01.01.1989</td>
+        <td>98795</td>
+        <td>46523</td>
+      </tr>
+      <tr class="string_4">
+        <th>Сидоров Илья Игоревич</th>
+        <td>М</td>
+        <td>бухгалтер</td>
+        <td>01.01.1979</td>
+        <td>743434</td>
+        <td>987979</td>
+      </tr>
+      <tr class="string_5">
+        <th>Пупин Фёдор Фёдорович</th>
+        <td>М</td>
+        <td>водитель</td>
+        <td>01.01.1963</td>
+        <td>74323434</td>
+        <td>9232379</td>
+      </tr>
+      <tr class="string_6">
+        <th>Крупин Сергей Иванович</th>
+        <td>М</td>
+        <td>водитель 2</td>
+        <td>01.01.1983</td>
+        <td>3234534</td>
+        <td>923123379</td>
+      </tr>
+    </table>
+    <span>
+      <center>ДАННЫЕ О СОТРУДНИКАХ</center>
+    </span>
+
+    <input type="button" id="button" value="Нет скрытых кнопок" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function ($) {
+        /*делаем возможность скрыть каждую СТРОКУ*/
+        $(".string_1").click(function () {
+          $(".string_1").fadeToggle();
+          $("#button").val("Показать все строки");
+        });
+        $(".string_2").click(function () {
+          $(".string_2").fadeToggle();
+          $("#button").val("Показать все строки");
+        });
+        $(".string_3").click(function () {
+          $(".string_3").fadeToggle();
+          $("#button").val("Показать все строки");
+        });
+        $(".string_4").click(function () {
+          $(".string_4").fadeToggle();
+          $("#button").val("Показать все строки");
+        });
+        $(".string_5").click(function () {
+          $(".string_5").fadeToggle();
+          $("#button").val("Показать все строки");
+        });
+        $(".string_6").click(function () {
+          $(".string_6").fadeToggle();
+          $("#button").val("Показать все строки");
+        });
+
+        /*#button возвращаем скрытые СТРОКИ*/
+
+        $("#button").click(function () {
+          if ($(".string_6").is(":visible")) {
+            $(".string_6").hide();
+          } else {
+            $(".string_6").show();
+          }
+        });
+        $("#button").click(function () {
+          if ($(".string_5").is(":visible")) {
+            $(".string_5").hide();
+          } else {
+            $(".string_5").show();
+          }
+        });
+        $("#button").click(function () {
+          if ($(".string_4").is(":visible")) {
+            $(".string_4").hide();
+          } else {
+            $(".string_4").show();
+          }
+        });
+        $("#button").click(function () {
+          if ($(".string_3").is(":visible")) {
+            $(".string_3").hide();
+          } else {
+            $(".string_3").show();
+          }
+        });
+        $("#button").click(function () {
+          if ($(".string_2").is(":visible")) {
+            $(".string_2").hide();
+          } else {
+            $(".string_2").show();
+          }
+        });
+        $("#button").click(function () {
+          if ($(".string_1").is(":visible")) {
+            $(".string_1").hide();
+          } else {
+            $(".string_1").show();
+          }
+        });
+        /*$("#button").click(function () {
+          $("#table_data").val("Нет скрытых кнопок");
+        });   
+          МЕНЯЕТСЯ НАИМЕНОВАНИЕ КНОПКИ*/
+      });
+    </script>
+  </body>
+</html>

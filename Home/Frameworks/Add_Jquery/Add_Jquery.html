@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма с Jquery</title>
+    <style>
+        fieldset {
+            width: 350px;
+        }
+    </style>
+  </head>
+  <body>
+    <strong>Проверка пароля</strong>
+            <fieldset>
+                <div>
+                    <input type="text" id="username_password" name="password"/>
+                    <label for="username_password">*Пароль</label>
+                </div>
+                <div>
+                    <input type="text" id="repeat_password" name="password_2"/>
+                    <label for="repeat_password">*Повторите пароль</label>
+                </div>
+                <div> 
+                    <br>
+                <button id="submit" value="submit">Отправить</button>  
+                </div>
+              </form>
+            </fieldset>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        $(document).ready(function ($) {
+            $("#repeat_password").on("keyup", function() { /* Выполняем скрипт при изменении содержимого 2-го поля */
+	        var value_input1 = $("#username_password").val(); /* Получаем содержимое 1-го поля */
+            var value_input2 = $("#repeat_password").val(); /* Получаем содержимое 2-го поля */
+    
+        if(value_input1 != value_input2) { /* если поля НЕ совпадают */
+    
+            $("#username_password").css("backgroundColor", "red"); /* рисуем КРАСНЫМ INPUT */
+            $("#repeat_password").css("backgroundColor", "red");
+            $("#submit").attr("disabled", "disabled"); /* Запрещается отправка формы */
+        
+        } else { /* если поля совпадают*/
+    
+            $("#username_password").css("backgroundColor", "green");
+            $("#repeat_password").css("backgroundColor", "green");
+            $("#submit").removeAttr("disabled");  /* Разрешается отправка формы */ 
+        }
+    });
+});
+        </script>
+     </body>
+</html>

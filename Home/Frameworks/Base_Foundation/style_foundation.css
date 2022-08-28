@@ -1,0 +1,112 @@
+.holy-grail-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 3.5fr;
+  grid-template-rows: 2fr и 8fr;
+  grid-gap: 0px;
+  height: 20vh;
+}
+a {
+  color: hsla(197, 70%, 55%, 1);
+  text-decoration: underline;
+}
+.holy-grail-left_2 h3 {
+  color: hsla(197, 70%, 55%, 1);
+}
+.holy-grail-left_3 h2 {
+  color: hsla(197, 70%, 55%, 1);
+}
+
+.holy-grail-left_4 h2 {
+  color: hsla(197, 70%, 55%, 1);
+  font-size: 35pt;
+  font-weight: bold;
+  line-height: 0.9;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+@media screen and (max-width: 925px) {
+  .holy-grail-grid {
+    grid-template-rows: 2fr 1fr 5fr 1fr;
+  }
+}
+
+.holy-grail-header,
+.holy-grail-left,
+.holy-grail-middle,
+.holy-grail-left_2,
+.holy-grail-middle_2,
+.holy-grail-left_3,
+.holy-grail-middle_3,
+.holy-grail-left_4,
+.holy-grail-middle_4 {
+  padding: 10px;
+  border: 1px;
+  background-color: white;
+}
+
+.holy-grail-header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+
+@media screen and (max-width: 925px) {
+  .holy-grail-left {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .holy-grail-middle {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+@media screen and (max-width: 925px) {
+  .holy-grail-left_2 {
+    grid-row-start: 4; /*номер местоположения при mobile-версии*/
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+@media screen and (max-width: 925px) {
+  .holy-grail-middle_2 {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+@media screen and (max-width: 925px) {
+  .holy-grail-left_3 {
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+@media screen and (max-width: 925px) {
+  .holy-grail-middle_3 {
+    grid-row-start: 7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+@media screen and (max-width: 925px) {
+  .holy-grail-left_4 {
+    grid-row-start: 8;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+@media screen and (max-width: 925px) {
+  .holy-grail-middle_4 {
+    grid-row-start: 9;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
