@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FONT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="width: 800px; margin-left: 280px; background-color: aliceblue">
+    <div style="font-size: 24pt; text-align: center">
+      <font color="#BruceWillis">Hello Bruce!</font>
+      <font color="#CANDY">Hello CANDY!</font>
+      <font color="chucknorr">Hello Chuck!</font>
+      <font color="stevensegal">Hello Steven!</font>
+    </div>
+
+    <div
+      style="
+        font-family: 'Cormorant Infant', serif;
+        font-size: 20pt;
+        text-align: justify;
+      "
+    >
+      <h2>
+        Почему HTML считает &ldquo;#BruceWillis&rdquo; и другие такие значения
+        цветом?
+      </h2>
+      <p>
+        Как известно, в HTML при определении цвета используется
+        шестнадцатеричная система счисления. В качестве алфавита
+        шестнадцатеричной системы счисления используются цифры от 0 до 9 и шесть
+        первых латинских букв – A, B, C, D, E, F. При переводе в десятичную
+        систему буквы заменяются числами 10, 11, 12, 13, 14, 15 соответственно.
+      </p>
+      <p>
+        В случае же, если заданные в HTML символы не соотвествуют
+        шестнадцатеричной системе (или они пропущены), то такие символы
+        интерпретируются как 0. А дальше действует следующий алгоритм по
+        определению цвета:
+      </p>
+      <ol>
+        <li>
+          заменяются все невалидные шестнадцатеричные символы на 0 (например,
+          #CANDY интерпретируется HTML как 0ca0d0000000);
+        </li>
+        <li>
+          полученные шестнадцатеричные символы (0ca0d0000000) разбиваются на три
+          равные группы, при этом каждый компонент представляет соответствующую
+          цветовую составляющую цвета RGB (в нашем примере с #CANDY это RGB
+          (0ca0, d000, 0000));
+        </li>
+        <li>
+          усекается каждая из разбитых групп на два символа с права. Конечный
+          результат и определяет цвет (на примере с #CANDY это #ca0d00 или
+          rgb(202, 13, 0)).
+        </li>
+      </ol>
+      <p>
+        Таким образом, в HTML может быть много слов которые будут цвета
+        &ldquo;#BruceWillis&rdquo; или &ldquo;stevensegal&rdquo;.
+      </p>
+    </div>
+  </body>
+</html>
