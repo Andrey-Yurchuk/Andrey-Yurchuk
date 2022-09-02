@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тег &lt;area&gt;</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: #f5f0f0">
+    <main
+      style="
+        width: 800px;
+        margin-left: 280px;
+        font-size: 18pt;
+        text-align: justify;
+        font-family: 'Source Serif Pro', serif;
+      "
+    >
+      <h2 id="article" style="text-align: center">Тег &lt;area&gt;</h2>
+      <p>
+        Каждый элемент &lt;area&gt; определяет активные области изображения,
+        которые являются ссылками. Рисунок с привязанными к нему активными
+        областями называется в совокупности картой-изображением. Такая карта по
+        внешнему виду ничем не отличается от обычного изображения, но при этом
+        оно может быть разбито на невидимые зоны разной формы, где каждая из
+        областей служит ссылкой. Тег &lt;area&gt; задает форму области, ее
+        размеры, устанавливает адрес документа, на который следует сделать
+        ссылку, а также имя окна или фрейма, куда браузер будет загружать
+        документ. Этот тег всегда располагается в контейнере &lt;map&gt;,
+        который связывает координаты областей с изображением.
+      </p>
+      <img src="plant_frui_pxhere.com.jpg" usemap="#image-map" />
+      <map name="image-map">
+        <area
+          target="_blank"
+          alt="Абрикос"
+          title="Перейти на MDN Web Docs"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area"
+          coords="226,292,266,311,291,348,349,360,369,385,364,424,329,473,266,513,193,531,127,518,89,500,51,451,39,406,55,363,94,331,136,311,176,296"
+          shape="poly"
+        />
+        <area
+          target="_blank"
+          alt="Абрикос"
+          title="Перейти на HTMLBOOK.RU"
+          href="http://htmlbook.ru/html/area"
+          coords="513,449,479,427,453,392,456,371,475,330,484,288,506,264,538,254,574,249,627,254,672,260,736,284,755,313,751,385,726,423,691,451,629,469,568,471"
+          shape="poly"
+        />
+        <area
+          target="_blank"
+          alt="Абрикос"
+          title="Читать сначала"
+          href="#article"
+          coords="356,175,123"
+          shape="circle"
+        />
+        <p>
+          Пример фиксирования активных областей изображения тега &lt;area&gt;,
+          которые являются ссылками, реализован вверху на изображении с
+          абрикосами. Область изображения каждого из трёх абрикосов является
+          ссылкой.
+        </p>
+      </map>
+    </main>
+  </body>
+</html>
