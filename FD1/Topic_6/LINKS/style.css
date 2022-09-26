@@ -1,0 +1,81 @@
+/*Первый вариант*/
+
+.var_table {
+    font-size: 22px;
+}
+div > table {
+    border-spacing: 12px;
+    text-align: center;
+}
+tr > td {
+    vertical-align: top;
+    height: 35px;
+    width: 165px;
+}
+tr > td:not(td:last-of-type) {
+    border-right-style: solid;
+    border-color: red;
+    border-width: 3px;
+}
+td > a {
+    color: #008000;
+}
+td > a:hover {
+    color: red;
+}
+
+/*Второй вариант*/
+
+.var_inblock {
+    font-size: 22px;
+    margin-left: 28px;
+    padding-top: 20px;
+}
+.var_inblock a {
+    display: inline-block;
+    color: #008000;
+    padding-right: 15px;
+    text-align: center;
+    height: 55px;
+}
+.var_inblock a::after {
+    content:"";
+    border-right-style: solid;
+    border-color: red;
+    border-width: 3px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+}
+a:last-of-type::after {
+    border-color: white;
+}
+div > a:hover {
+    color: red;
+}
+
+/*Третий вариант*/
+
+.var_float {
+    font-size: 22px;
+    text-align: center;
+    margin-left: 12px;
+}
+.var_float > p > a {
+    color: #008000;
+    padding-right: 30px;
+    margin-left: 0px;
+    padding-left: 5px;
+}
+.var_float p {
+    float: left;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-top: 5px;
+}
+.var_float p:not(:last-of-type) {
+    background: url("red_line.png") no-repeat right;
+}
+.var_float a:hover {
+    color: red;
+}
