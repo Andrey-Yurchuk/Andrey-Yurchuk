@@ -8,7 +8,7 @@ body {
     color: #0000FF; 
     font-size: 20pt; 
 }
-/*фон столбцу МЕНЮ через ОБЩИЙ КОНТЕЙНЕР*/
+/*фон столбцу МЕНЮ через ОБЩИЙ КОНТЕЙНЕР*/ 
 .container {   
     background: url('fon.png') repeat-y left top; 
 }
