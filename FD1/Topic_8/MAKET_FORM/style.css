@@ -1,0 +1,54 @@
+body {
+    font-size: 22px;
+}
+.form {
+    margin-bottom: 10px;
+}
+.f_l_w_10 {
+    float:left; 
+    width: 10em;
+}
+.ml_10_mb_10 {
+    margin-left: 10em; 
+    margin-bottom: 10px;
+}
+.ml_10_mb_10 input {
+    width:100%; 
+}
+select {
+    margin-bottom: 10px; 
+    font-size: 20px;
+}
+.comment {
+    float: left;
+    margin-top: 10px;
+}
+textarea {
+    width: 100%;
+}
+.button {
+    font-size: 20px;
+}
+
+@media all and (max-width: 700px) {
+    .f_l_w_10 {
+        float: none;
+    }
+    .ml_10_mb_10 {
+        margin-left: 0em; 
+        margin-bottom: 0px;
+    }
+    .sp_radio {
+        display: block;
+    }
+    .f_l_w_10 {
+        margin-bottom: 0px;
+    }
+    .comment {
+        float: none;
+        margin-top: -25px;
+    }
+    .text {
+        margin-top: -25px; 
+    }
+}
