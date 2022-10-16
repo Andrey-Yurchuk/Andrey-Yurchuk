@@ -1,0 +1,29 @@
+.one {
+    position: relative;
+    width: 450px;
+    height: 420px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+.pictures {
+    position: absolute;
+}
+.pictures.no_smok {
+    z-index: 1;
+    top: 80px;
+    right: 100px;
+}
+.pictures.man_wom {
+    right: 20px;
+}
+.pictures.yin_yan {
+    right: 120px;
+    bottom: 5px;
+}
+.pictures:hover:not(.no_smok) {
+    z-index: 2;
+}
+.text {
+    font-size: 20px;
+    text-align: justify;
+}
