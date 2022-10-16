@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.header {
+    text-align: center; 
+    background-color: #ADD8E6;
+    padding: 20px; 
+    color: #0000FF; 
+    font-size: 20pt; 
+}
+/*фон столбцу МЕНЮ через ОБЩИЙ КОНТЕЙНЕР*/
+.container {   
+    background: url('fon.png') repeat-y left top; 
+}
+.menu {
+    float: left;
+    width: 300px; 
+}
+.menu > p {
+    font-size: 16pt; 
+    font-weight: bold; 
+    margin-left: 20px;
+}
+.list {
+    font-size: 15pt; 
+    list-style-type: square;
+}
+.content {
+    margin-left: 325px;
+}
+.content > img {
+    float: left;
+    width: 260px;
+    height: 170px;
+    margin-top: 70px; 
+    margin-left: 0; 
+    margin-right: 25px; 
+    margin-bottom: 25px;
+}
+.ball {
+    background: url('ball.png') repeat-y right top;
+}
+.ball > h2 {
+    text-align: auto;
+    padding-top: 20px; 
+    margin-top: 0;
+}
+.article {
+    font-size: 16pt;
+}
+.clearfix {
+    clear: both;
+}
+.footer {
+    clear: both; 
+    text-align: center; 
+    background-color: #ADD8E6;
+    padding: 20px; 
+    color: #0000FF; 
+    font-size: 20pt;
+}
+
+.link {
+    position: fixed;
+    right: 30px;
+    top: 40px;
+    width: 90px;
+    height: 50px;
+    border: solid 1px green;
+    background-color: lightgreen;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+@media all and (max-width: 850px) {
+    .content {
+        margin-left: 320px; 
+    }
+    .content > img {
+        float: none;
+        width: 100%; 
+        height: 100%;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        margin-right: 0; 
+    }
+    .ball > h2 {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 600px) { 
+    .container {   
+        background: none;
+    }
+    .header {
+        display: none;
+    }
+    .menu {
+        float: none;
+        width: auto;
+        background-color: #f0e78d;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menu > p { 
+        margin-left: 37px;
+    }
+    .list li {
+        display: inline;
+    }
+    .content {
+        margin-left: 0; 
+    }
+    .content > img {
+        float: none;
+        width: 100%; 
+        height: 100%;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    .ball > h2 {
+        text-align: center;
+    }
+    .article.rules {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
