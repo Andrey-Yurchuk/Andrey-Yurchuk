@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Animation</title>
+    <style>
+        .container {
+            padding-right: auto;
+            padding-left: 10%; 
+            width: auto;
+            height: auto;
+        }
+        
+            /*OVAL*/
+
+        @keyframes MyAnimation1 {
+            0% {
+                background-color: red;
+            }
+            100% {
+                background-color:aqua; 
+            }
+        }
+        @keyframes MyAnimation2 {
+            0% {
+                color: aliceblue;
+            }
+            100% {
+                color: black;
+            }
+        }
+        #oval {
+            display: inline-block;
+            margin-top: 0px;
+            width: 350px;
+            height: 100px;
+            border-radius: 150px / 80px;
+            text-align: center;
+            padding-top: 60px;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            animation: MyAnimation1 4s infinite, MyAnimation2 5s infinite;
+            }
+
+            /*RECTANGLE*/
+            
+        @keyframes MyAnimation3 {
+            0% {
+                background-color: blue;
+                
+            }
+            100% {
+                background-color:chartreuse;
+            }
+        }
+        #rectangle {
+            display: inline;
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 0px;
+            padding-top: 55px;
+            width: 270px;
+            height: 105px;
+            background-color: blue;
+            font-size: 30px;
+            text-align: center;
+            color: beige;
+            }
+        .container:hover #rectangle {
+            animation: MyAnimation3 2s infinite;
+            }
+            
+            /*CIRCLE + SQUARE*/
+        
+        @keyframes MyAnimation4 {
+            0% {
+                background: green;
+                border-radius: 50%;
+                color: beige; 
+                }
+            100% {
+                background: green;
+                border-radius: 0%;
+                color: rgb(6, 36, 40);
+            }
+        }
+        #circle_square {
+                display: inline;
+                position: absolute;
+                margin-left: 380px;
+                width: 160px;
+                height: 120px;
+                background: green;
+                border-radius: 50%;
+                padding-top: 40px;
+                font-size: 30px;
+                text-align: center;
+                color: beige;
+            }
+         .container:hover #circle_square {
+            animation: MyAnimation4 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="oval">Simple Oval</div>
+        <div id="rectangle">Rectangle</div>
+        <div id="circle_square">Circle-Square</div>
+    </div>
+</body>
+</html>
