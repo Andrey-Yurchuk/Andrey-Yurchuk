@@ -13,7 +13,7 @@ body {
     display:flex;
 }
 .box_1 {
-    flex: 1 1 auto; /*1-flex-grow, 2-flex-shrink, 3-flex-basis*/
+    flex: 0 0 280px; /*1-flex-grow, 2-flex-shrink, 3-flex-basis*/
     background-color: #f0e78d;
 }
 .box_1 > h3 {
@@ -25,8 +25,8 @@ body {
     list-style-type: square;
 }
 .box_2 {
-    flex: 15 1 auto; /*1-flex-grow, 2-flex-shrink, 3-flex-basis*/
-    width: 200px;
+    flex: 15 1 auto; /*1-flex-grow, 2-flex-shrink, 3-flex-basis*/ 
+    
 }
 .ball > h2 {
     text-align: center;
@@ -62,7 +62,7 @@ body {
     font-size: 20pt;
 }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 740px) {
     
     .header {
         display: none;
