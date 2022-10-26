@@ -1,0 +1,106 @@
+/*DESKTOP FIRST*/
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.header {
+    grid-column: span 2; /*занимает место двух колонок*/
+    text-align: center; 
+    background-color: #ADD8E6;
+    padding: 20px; 
+    color: #0000FF; 
+    font-size: 20pt; 
+}
+.grid {
+    display: grid;
+    grid-template-columns: 280px 1fr; 
+    grid-template-rows: auto;
+}
+.box_1 {
+    background-color: #f0e78d;
+}
+.box_1 > h3 {
+    font-size: 16pt;  
+    margin-left: 20px;
+}
+.list {
+    font-size: 15pt; 
+    list-style-type: square;
+}
+.ball > h2 {
+    text-align: center;
+    padding-top: 20px; 
+    margin-top: 0;
+}
+.pictures {
+    float: left;
+    width: 260px;
+    height: 170px;
+    margin-top: 5px; 
+    margin-left: 25px; 
+    margin-right: 25px; 
+    margin-bottom: 0px;
+}
+.ball {
+    background: url('ball.png') repeat-y right top;
+    padding: 0px;
+}
+.article {
+    font-size: 16pt;
+    margin-left: 25px;
+}
+.article.rules {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+.footer {
+    grid-column: span 2; /*занимает место двух колонок*/
+    text-align: center; 
+    background-color: #ADD8E6;
+    padding: 20px; 
+    color: #0000FF; 
+    font-size: 20pt;
+}
+
+@media all and (max-width: 740px) {
+    
+    .grid {
+        grid-template-columns: auto; 
+    }
+    .header {
+        display: none;
+    }
+    .ball {
+        background: none;
+    }
+    .box_1 {
+        grid-row: 2;
+        background-color: white; 
+    }
+    .box_2 {
+        grid-row: 1;
+    }
+    .list li {
+        display: inline;
+    }
+    .list {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .box_1 > h3 { 
+        margin-left: 0px;
+    }
+    .pictures {
+        width: 100%;
+        height: 100%;
+        margin-top: 5px; 
+        margin-left: 0px; 
+        margin-right: 0px; 
+        margin-bottom: 0px;
+    }
+    .article {
+        margin-left: 0px;
+    }
+    .footer {
+        display: none;
+    }
+}
