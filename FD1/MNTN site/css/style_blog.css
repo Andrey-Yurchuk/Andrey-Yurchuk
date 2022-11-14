@@ -1,0 +1,197 @@
+.body-blog {
+    max-width: 1790px;
+    font-family: 'Gilroy', sans-serif;
+    color: rgb(12, 12, 12);
+    margin: 0;
+}
+
+.body_head {
+    max-width: 1790px;
+    background-image: url('./../image/pictures/nature_rock_wilderness_pxhere.com.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.body_title {
+    padding-bottom: 100px;
+}
+
+.main-body {
+    max-width: 1790px;
+    background-color: rgb(217, 217, 243);
+    padding-bottom: 50px;
+}
+
+.name_body_blog {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+	font-style: normal;
+    font-size: 35px;
+    text-align: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #CC6600; 
+    text-shadow: rgba(0, 0, 0, 0.9);
+}
+
+.name_body_blog h2 {
+    margin-left: 80px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.flex_blog {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.flex_blog img {
+    border-radius: 60%;
+    padding-bottom: 5px;
+}
+
+.wrap_img_autor {
+    min-width: 120px;
+}
+
+.article_blog {
+    max-width: 1650px;
+}
+
+.article_blog h3 {   
+    text-decoration: underline;
+    margin-top: 0px;
+    margin-left: 70px;
+    font-size: 25px;
+}
+
+.article_text {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 70px;
+    margin-right: 30px;
+}
+
+.video {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.foo-blog {
+    background-color: #0B1D26; 
+    padding-top: 30px;
+}
+
+.wht_blog {
+    color: #fff;
+}
+
+    /*ADAPTIV*/ 
+
+@media all and (max-width: 1230px) {
+    .header {
+        padding-top: 45px;
+    }  
+}
+ 
+@media all and (max-width: 900px) {
+    .body_title {
+        padding-bottom: 40px;
+        margin-bottom: 0;
+    }
+    .head_min {
+        margin-bottom: 150px;
+    }
+}
+
+@media all and (max-width: 820px) {
+    .name_body_blog {
+        font-size: 25px;
+    } 
+    .article_blog h3 {   
+        font-size: 18px;
+    } 
+    .article_text {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .header {
+        padding-top: 0px;
+    } 
+    .head_min {
+        margin-bottom: 70px;
+    }  
+ }
+
+@media all and (max-width: 620px) {
+    .video {
+        max-width: 500px;
+    } 
+    .video iframe {
+        width: 500px;
+        height: 270px;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .body_title {
+        padding-bottom: 10px;
+    }
+    .head_min {
+        margin-bottom: 40px;
+    }
+    .tit_min {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 510px) {
+    .video {
+        max-width: 350px;
+    } 
+    .video iframe {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .wrap_img_autor {
+        display: none;
+    }
+    .article_text {
+        margin-left: 20px;
+    } 
+    .name_body_blog h2 {
+        margin-left: 20px;
+    } 
+    .article_blog h3 {
+        margin-left: 20px;
+    }
+}
+
+@media all and (max-width: 370px) {
+    .categ_blog {
+        display: none;
+    }
+}
+@media all and (max-width: 355px) {
+    .video {
+        max-width: 250px;
+    } 
+    .video iframe {
+        width: 250px;
+        height: 135px;
+    }  
+}
+
+@media all and (max-width: 295px) {
+    .head_min {
+        margin-bottom: 10px;
+    }
+}   

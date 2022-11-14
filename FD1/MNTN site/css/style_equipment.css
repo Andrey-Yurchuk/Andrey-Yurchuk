@@ -1,0 +1,192 @@
+.body-equip {
+    max-width: 1790px;
+    font-family: 'Gilroy', sans-serif;
+    color: rgb(12, 12, 12);
+    margin: 0;
+}
+
+.equip_head {
+    max-width: 1790px;
+    background-image: url('./../image/pictures/landscape__pxhere.com.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.equip_title {
+    padding-bottom: 100px;
+}
+
+.main-equip {
+    max-width: 1790px;
+    background-color: rgb(217, 217, 243);
+    padding-bottom: 50px;
+}
+
+.hiking_article { 
+    max-width: 1490px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.hiking_article h2, .recomend_equip h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+	font-style: normal;
+    font-size: 35px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #CC6600; 
+    text-shadow: rgba(0, 0, 0, 0.9);
+}
+
+.hiking_article p {
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 30px;   
+}
+
+.hiking_article h3 {
+    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+p.line {
+    border-left: 3px solid #FBD784;
+}
+
+.recomend_equip {
+    margin-bottom: 25px;
+}
+
+.details {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    margin-left: 20px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+    text-align: justify;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+.foo-equip {
+    background-color: #0B1D26; 
+    padding-top: 30px;
+}
+
+.wht {
+    color: #fff;
+}
+
+        /*ADAPTIV*/
+
+@media all and (max-width: 1230px) {
+    .header {
+        padding-top: 45px;
+    }
+    .equip_title {
+        padding-bottom: 80px;
+        margin-bottom: 0;
+    }   
+}
+
+@media all and (max-width: 950px) {  
+    .equip_title {
+        padding-bottom: 50px; 
+        margin-bottom: 0;
+    }
+}
+
+@media all and (max-width: 890px) {  
+    .equip_title {
+        padding-bottom: 40px; 
+    }
+    .head_min {
+        margin-bottom: 120px;
+    }
+}
+
+@media all and (max-width: 820px) {
+    .hiking_article h2, .recomend_equip h2 {
+        font-size: 25px;
+    }
+    .hiking_article h3 {
+        font-size: 18px;
+    }
+    .hiking_article p {
+        font-size: 15px;  
+    }
+}
+
+@media all and (max-width: 680px) {
+    .head_min {
+        margin-bottom: 70px;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .header {
+        padding-top: 0px;
+    }
+}
+
+@media all and (max-width: 620px) {
+    .head_min {
+        margin-bottom: 40px;
+    }
+    .tit_min {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 470px) {
+    .equip_title {
+        padding-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 370px) {
+    .categ_equip {
+        display: none;
+    }
+    .equip_title {
+        margin-bottom: 0px; 
+    }
+}
+
+@media all and (max-width: 345px) {
+    .tit_min {
+        font-size: 18px;
+    }
+}
+@media all and (max-width: 250px) {
+   .equip_head {
+        margin-bottom: -20px;
+    }
+    .head_min {
+        margin-bottom: 10px;
+    }
+}

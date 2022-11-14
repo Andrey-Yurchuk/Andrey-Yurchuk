@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, 
+    target-densitydpi=device-dpi, initial-scale=1">
+    <title>MNTN Blog</title>
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="android-chrome" sizes="512x512" href="./favicon/android-chrome-512x512.png">
+    <link rel="android-chrome" sizes="192x192" href="./favicon/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <!--CSS style-->
+    <link rel="stylesheet" href="./css/style_index.css">
+    <link rel="stylesheet" href="./css/style_blog.css">
+    <!--FONTS-->
+    <link rel="stylesheet" href="./css/fonts/gilroy/stylesheet.css">
+    <link rel="stylesheet" href="./css/fonts/playfair_display/stylesheet.css">
+</head>
+<body class="body-blog">
+
+    <header class="header body_head">
+       
+        <div class="heading head_min">
+            <div class="row">
+                <a class="mntn_logo" href="./index.html" target="_blank" title="Main page">MNTN</a>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./equipment.html" target="_blank" title="Equipment">Equipment</a></li>
+                        <li><a href="./about.html" target="_blank" title="About us">About us</a></li>
+                        <li><a href="./blog.html" title="Blog">Blog</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="account" title="Account">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="cart" fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12
+                            22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 
+                            16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 
+                            16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 
+                            7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 
+                            8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 
+                            11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" 
+                            fill="white"/>
+                        <mask id="mask0_1_50" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22
+                                22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 
+                                18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 
+                                14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 
+                                18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 
+                                6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 
+                                12 11Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask0_1_50)"></g>
+                    </svg>Account</a>
+                
+                <!--МЕНЮ-БУРГЕР при адаптиве-->
+                
+                <button class="nav-button">
+                    <span class="nav-button-icon"></span>
+                </button>
+                
+                <!--СОДЕРЖАНИЕ МЕНЮ при адаптиве-->
+                
+                <div class="mobile-nav">
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="./equipment.html">Equipment</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="account">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="cart" fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12
+                                22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 
+                                16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 
+                                16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 
+                                7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 
+                                8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 
+                                11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" 
+                                fill="white"/>
+                            <mask id="mask0_1_50" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22
+                                    22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 
+                                    18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 
+                                    14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 
+                                    18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 
+                                    6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 
+                                    12 11Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0_1_50)"></g>
+                        </svg>Account</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="title body_title">
+            <div class="category categ_blog">Our stories</div>
+            <h1 class="title_name tit_min">Write about the mountains</h1>
+        </div>
+
+    </header>
+
+    <main class="main-body">
+
+        <div class="name_body_blog">
+            <h2>Article #1</h2>
+        </div>
+
+        <div class="flex_blog">
+            <div class="wrap_img_autor"> 
+                <img src="./image/pictures/person_cold_winter_pxhere.com.jpg" 
+                 width="120" height="90" alt="Photo of a man in winter"/>
+                <span class="autor">Marco Hantman</span>
+            </div>
+            <div class="article_blog">
+                <h3>The map is your helper</h3>
+                <br/>
+                <p class="article_text">Hello, friends! Packing a backpack in anticipation of new wanderings? 
+                   Did you forget the cards?</p>
+                <br/>
+                <p class="article_text">A paper card does not need the Internet, does not waste battery power, 
+                   and in general gives you the opportunity to take a break from gadgets and feel like a pioneer 
+                   from the past. It is edited with a simple pencil, decorated with flags and proudly flies on the 
+                   wall. Unites in the campaign: you can bend over a huge map with the whole group - not like over
+                   a smartphone. Unfortunately, the disadvantages are obvious. The cards get wet, crumple and eventually
+                   become irrelevant.
+                </p>
+                <br/>
+                <p class="article_text">Of course, in the modern world we use mobile applications every day. There are
+                   a lot of mobile apps with maps: Maps me, Fatmap, Spyglass, Locus map and others.     
+                </p>
+                <br/>
+                <p class="article_text"> Mobile applications are most convenient to use as a navigator for pedestrians and
+                   motorists. In some cities, public transport displays. Contains voice instructions. You can enable night 
+                   mode and 3D format. Maps of many foreign cities have been drawn.
+                </p>
+                <br/>
+                <p class="article_text">Applications allow you to share GPS coordinates, which means that you can report yourself
+                   to civilization if you get lost on the route. Simple designations of mobile maps do not require knowledge of 
+                   topography, and descriptions of objects are convenient to use for path planning. The good old paper map will 
+                   not be out of use soon. A large format is more convenient to consider, and it will also help out if the phone 
+                   sits down, breaks or gets lost, especially on complex, autonomous routes.
+                </p>
+                <br>
+                <p class="article_text">The ideal preparation for a hike is paper maps and several applications. Start getting to 
+                   know them at home while you have access to the Internet and electricity.
+                </p>
+                <br>
+                <p class="article_text">And now I want to share with you a wonderful video about hiking in the mountains.</p>
+            </div>
+        </div>
+
+        <div class="video">
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/nyvehUgBc3g" title="YouTube video player" 
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+             allowfullscreen> <!-- youtube w=560, h=315-->
+            </iframe>
+        </div>
+
+    </main>
+
+    <footer class="footer foo-blog">
+        
+        <div class="container">
+            
+            <div class="row column">  
+
+                <div class="copyright">
+                    <div class="mntn_logo foo">MNTN</div>
+                    <div class="copy_text wht_blog">Get out there &amp; discover your next slope, mountain &amp; destination!</div>
+                    <div class="rights">Copyright 2019 MNTN, Inc. Terms &amp; Privacy</div>
+                </div>
+
+                <div class="foo_wrapper">
+            
+                    <div class="navig_foo">
+                        <h4 class="footer_title">More on The Blog</h4>
+                        <ul>
+                            <li><a href="#">About MNTN</a></li>
+                            <li><a href="#">Contributors &amp;ы Writers</a></li>
+                            <li><a href="#">Write For Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="navig_foo">
+                        <h4 class="footer_title">More on MNTN</h4>
+                        <ul>
+                            <li><a href="#">The Team</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </footer>
+    
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
