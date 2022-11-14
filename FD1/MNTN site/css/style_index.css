@@ -469,7 +469,7 @@ a:hover #white_arrow, a:hover {
     }
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1300px) {
     .title_name {
         font-size: 68px;
     }
