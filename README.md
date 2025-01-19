@@ -6,7 +6,7 @@
 
 ---
 
-![Codewars](https://www.codewars.com/users/Fantomas_88/badges/large) <span style='display: inline-block; margin-bottom: 6px; font-size: 20px; font-weight: bold; vertical-align: text-bottom;'><samp>My profile on Codewars</samp></span>
+![Codewars](https://www.codewars.com/users/Fantomas_88/badges/large) 
 
 ---
 
